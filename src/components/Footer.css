@@ -1,0 +1,128 @@
+.footer {
+  background: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6") no-repeat center/cover;
+  position: relative;
+  color: white;
+}
+
+/* Overlay for dark effect */
+.footer-overlay {
+  background: rgba(0, 100, 0, 0.85);
+  padding: 40px 20px 10px;
+}
+
+/* Layout */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Sections */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  margin-bottom: 15px;
+  color: #d4ffcc;
+}
+
+.footer-section p,
+.footer-section li {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+/* Links */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-section ul li:hover {
+  color: #aaffaa;
+  transform: translateX(5px);
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Hours highlight */
+.active-day {
+  font-weight: bold;
+  color: #ffeb3b;
+  font-size: 16px;
+}
+
+/* Improve spacing */
+.footer-section p {
+  margin: 6px 0;
+}
+
+/* Optional: grid layout for 4 sections */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Map Button */
+.map-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #0da5e1e6;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+/* Hover */
+.map-btn:hover {
+  background: #e18a19;
+  transform: scale(1.05);
+}
+
+/* Animation pulse */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(20, 222, 88, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255,152,0,0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255,152,0,0);
+  }
+}
+
+.map-btn {
+  animation: glow 2s infinite;
+}

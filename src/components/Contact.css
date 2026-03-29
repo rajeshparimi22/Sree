@@ -1,0 +1,67 @@
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f5f5f5;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* Center the button */
+.whatsapp-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Blue Highlight Button */
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(45deg, #1565c0, #42a5f5);
+  color: white;
+  padding: 15px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(219, 25, 25, 0.3);
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.whatsapp-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(227, 92, 24, 0.4);
+}
+
+/* Icon */
+.icon {
+  font-size: 20px;
+}
+
+/* Smooth pulse animation (highlight effect) */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(33, 150, 243, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(33, 150, 243, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(33, 150, 243, 0);
+  }
+}
+
+/* Apply animation */
+.whatsapp-btn {
+  animation: pulse 2s infinite;
+}

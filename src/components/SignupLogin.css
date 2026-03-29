@@ -1,0 +1,36 @@
+.auth-container {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f0f4f8;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+}
+
+.auth-container input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+}
+
+.auth-container button {
+  padding: 10px 25px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-container button:hover {
+  background: #0d47a1;
+}
+
+.toggle-text {
+  margin-top: 15px;
+  color: blue;
+  cursor: pointer;
+}
