@@ -7,11 +7,11 @@ import Products from "./components/Products";
 import Contact from "./components/Contact";
 import SignupLogin from "./components/SignupLogin";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
       <Navbar />
 
       <Routes>
@@ -23,7 +23,7 @@ function App() {
       </Routes>
 
       <Footer />
-    </BrowserRouter>
+    </div>
   );
 }
 
